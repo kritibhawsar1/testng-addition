@@ -9,13 +9,14 @@ public class FirstTest {
 
     @Test
     public void openUrl() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\MAHAKAAL\\Documents\\GitHub\\maven-practise\\src\\drivers\\chrome\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\MAHAKAAL\\Documents\\GitHub\\testng-addition\\drivers\\chrome\\125\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.youtube.com/");
 
         WebElement searchInput = driver.findElement(By.xpath("//*[@id='search-input']/input"));
         WebElement  searchButton = driver.findElement(By.xpath("//*[@id='search-icon-legacy']"));
+        Assert.assertTrue(searchInput.isDisplayed());
         searchInput.sendKeys("automation");;
         searchButton.click();
         System.out.println("clicked");
