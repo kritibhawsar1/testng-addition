@@ -3,6 +3,8 @@
 <suite name="All Test Suite">
 
     <parameter name="mainUrl" value="https://formy-project.herokuapp.com/form"></parameter>
+    <parameter name="numberOfRadioButton" value="3"></parameter>
+    <parameter name="numberOfChechbox" value="3"></parameter>
 
     <test verbose="2" preserve-order="true" name="C:/Users/MAHAKAAL/Documents/GitHub/testng-addition">
         
