@@ -7,7 +7,7 @@ public class BeforeAndAfterTest extends BaseTest {
     BeforeAndAfter beforeAndAfter;
 
     @Parameters({"mainUrl"})
-//    @Test(priority = 1)
+    @Test(priority = 1)
     public void openUrl(String mainUrl) throws InterruptedException {
 
         beforeAndAfter = new BeforeAndAfter(startDriver());
@@ -54,7 +54,6 @@ public class BeforeAndAfterTest extends BaseTest {
 
         System.out.println("clicking submit button");
         beforeAndAfter.submitButtonXpath.click();
-        
     }
 
 }
