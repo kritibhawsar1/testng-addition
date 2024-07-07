@@ -1,11 +1,13 @@
+package OopTest;
+
 class Employee{
     private int psid = 0;
     private String name = "";
     private String dept = "";
 
     public Employee(){
-        System.out.println("Default Employee Constructor");
-//        System.out.println("Employee details:- ");
+        System.out.println("Default OopTest.Employee Constructor");
+//        System.out.println("OopTest.Employee details:- ");
 //        System.out.println("PS ID: "+this.psid);
 //        System.out.println("Name: "+this.name);
 //        System.out.println("Dept.: "+this.dept);
@@ -14,7 +16,7 @@ class Employee{
 
     public Employee(int psid){
         this.psid = psid;
-//        System.out.println("Employee details:- ");
+//        System.out.println("OopTest.Employee details:- ");
 //        System.out.println("PS ID: "+this.psid);
 //        System.out.println("Name: "+this.name);
 //        System.out.println("Dept.: "+this.dept);
@@ -24,7 +26,7 @@ class Employee{
     public Employee(String name, String dept){
         this.name = name;
         this.dept = dept;
-//        System.out.println("Employee details:- ");
+//        System.out.println("OopTest.Employee details:- ");
 //        System.out.println("PS ID: "+this.psid);
 //        System.out.println("Name: "+this.name);
 //        System.out.println("Dept.: "+this.dept);
@@ -35,7 +37,7 @@ class Employee{
         this.psid = psid;
         this.name = name;
         this.dept = dept;
-//        System.out.println("Employee details:- ");
+//        System.out.println("OopTest.Employee details:- ");
 //        System.out.println("PS ID: "+this.psid);
 //        System.out.println("Name: "+this.name);
 //        System.out.println("Dept.: "+this.dept);
@@ -43,7 +45,7 @@ class Employee{
     }
 
     public void printEmployeeDetails(){
-        System.out.println("Employee details: ");
+        System.out.println("OopTest.Employee details: ");
         System.out.println("PS ID: "+this.psid);
         System.out.println("Name: "+this.name);
         System.out.println("Dept.: "+this.dept);

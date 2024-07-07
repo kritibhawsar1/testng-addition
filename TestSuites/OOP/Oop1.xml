@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OBJECT ORIENTED PROGRAMING - ENCAPSULATION">
+
+<!--    <parameter name="mainUrl" value="https://www.browserstack.com/users/sign_in"></parameter>-->
+    <parameter name="mainUrl" value="https://www.browserstack.com/users/sign_up"></parameter>
+    <parameter name="numberOfRadioButton" value="3"></parameter>
+    <parameter name="numberOfChechbox" value="3"></parameter>
+
+    <test verbose="2" preserve-order="true" name="C:/Users/MAHAKAAL/Documents/GitHub/testng-addition">
+
+        <classes>
+            <class name="OopTest.SignUpEncapsulationTest"></class>
+        </classes>
+
+    </test>
+</suite>
