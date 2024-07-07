@@ -2,13 +2,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="OBJECT ORIENTED PROGRAMING - ENCAPSULATION">
 
-<!--    <parameter name="mainUrl" value="https://www.browserstack.com/users/sign_in"></parameter>-->
-    <parameter name="mainUrl" value="https://www.browserstack.com/users/sign_up"></parameter>
+    <!--    <parameter name="mainUrl" value="https://www.browserstack.com/users/sign_in"></parameter>-->
+<!--    <parameter name="mainUrl" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"></parameter>-->
 
     <test verbose="2" preserve-order="true" name="C:/Users/MAHAKAAL/Documents/GitHub/testng-addition">
 
         <classes>
-            <class name="OopTest.SignUpEncapsulationTest"></class>
+            <class name="DataProviderTest"></class>
         </classes>
 
     </test>

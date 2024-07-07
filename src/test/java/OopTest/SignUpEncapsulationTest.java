@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 //Parent class BaseTest contains information about driver(shows inheritance)
 public class SignUpEncapsulationTest extends BaseTest {
-    
+
     SignUpEncapsulation signUpEncapsulation;
 
     @Parameters({"mainUrl"})
