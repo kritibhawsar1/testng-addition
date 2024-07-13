@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.util.Iterator;
 
 public class ReadWriteFromExcel {
@@ -28,7 +29,7 @@ public class ReadWriteFromExcel {
             Iterator<Cell> cellIterator = row.iterator();  //all the cells for row i
             while (cellIterator.hasNext()) {
                 Cell cell = cellIterator.next();  //cell j
-                
+
                 //PROCESSING THE CELL VALUE BASED ON THEIR DATA TYPE USING DATA FORMATTER
                 DataFormatter dataFormatter = new DataFormatter();
                 String city = dataFormatter.formatCellValue(cell);
@@ -41,4 +42,20 @@ public class ReadWriteFromExcel {
         System.out.println("Read Done");
     }
 
+    @Test
+    public void dataWriteTest() throws Exception{
+
+        Workbook workbook = new XSSFWorkbook();
+        Sheet sheet = workbook.createSheet("Names");
+
+        Row row = sheet.createRow(0);
+        Cell cell = row.createCell(0);
+        cell.setCellValue("Kriti Bhawsar");
+
+        FileOutputStream file = new FileOutputStream("path/to/excel/Names.xlsx");
+        workbook.write(file);
+
+        workbook.close();
+        file.close();
+    }
 }
